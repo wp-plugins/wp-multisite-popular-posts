@@ -24,7 +24,7 @@ Use following shortcode parameters:
 	* lastweek : last 7 days
 	* currentweek : this week
 * show_posts : display (1) or not (0) total number of posts published accross network
-* show_comments: display (1) or not (0) total number of coments for each posts in list
+* show_comments: display (1) or not (0) total number of coments for each posts in list.
 
 == Installation ==
 
