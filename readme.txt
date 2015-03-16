@@ -16,6 +16,7 @@ This plugin gives you the ability to display most commented posts on the entire 
 Shortcode example:
 `[wp_mpp max=5 type=ever show_posts=0 show_comments=1]`
 Use following shortcode parameters:
+
 * *max* : maxium entries to show
 * *type* :
 	* *ever* : all time stat
