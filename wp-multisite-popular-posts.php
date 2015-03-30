@@ -13,10 +13,10 @@ class wp_multisite_popular_posts extends WP_Widget {
   
   // constructor
   function wp_multisite_popular_posts() {
-	$widget_ops = array('classname' => 'wp_multisite_popular_posts', 'description' => __('Add this widget to diaplay most popular posts across the network', 'wp_widget_multisite_popular_posts'));
+	$widget_ops = array('classname' => 'wp_multisite_popular_posts', 'description' => __('Add this widget to diaplay most popular posts across the network', 'wp_mpp'));
     $control_ops = array('width' => 400, 'height' => 300);
 	
-	parent::WP_Widget(false, $name = __('WP Multisite Popular Posts', 'wp_widget_multisite_popular_posts'),$widget_ops/*,$control_ops*/ );
+	parent::WP_Widget(false, $name = __('WP Multisite Popular Posts', 'wp_mpp'),$widget_ops/*,$control_ops*/ );
   
   	$this->register_plugin_styles();
 	add_shortcode( 'wp_mpp', array($this, 'wp_multisite_popular_posts_shortcode_fn' ));
@@ -279,7 +279,7 @@ function widget($args, $instance) {
 	  }
 	
 	if ($show_posts){
-	  $result = '<h4 class="wmpp_title">'.__('Total number of posts accross network: ','chief-editor').count($postCommentsArray).'</h4>';
+	  $result = '<h4 class="wmpp_title">'.__('Total number of posts accross network: ','wp_mpp').count($postCommentsArray).'</h4>';
 	} else {
 	  $result = '';
 	}
@@ -288,7 +288,7 @@ function widget($args, $instance) {
 	  if ($sortResult) {
 		
 		if (!count($postCommentsArray)) {
-			return __("Not enough data",'wp_widget_multisite_popular_posts');
+			return __("Not enough data",'wp_mpp');
 		}
 		  
 		$postComments = '<ol class="wmpp_list">';
@@ -296,7 +296,7 @@ function widget($args, $instance) {
 		foreach ($postCommentsArray as $key => $value) {
 		  
 		  if ($value) {
-			$commentMsg = $value == 1 ? "comment" : "comments";
+			$commentMsg = $value == 1 ? __("comment",'wp_mpp') : __("comments",'wp_mpp');
 			$postComments .= '<li class="wmpp_list_item"><a target="_blank" href="'.$postCommentsPermalinks[$key].'">'.$postCommentsTitles[$key]. '</a>';
 			if ($show_comments){
 			  $postComments .= '<span class="wmpp_comment"> | '.$value.' '.$commentMsg.'</span></li>';
