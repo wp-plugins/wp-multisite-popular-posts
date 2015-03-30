@@ -27,7 +27,9 @@ class wp_multisite_popular_posts extends WP_Widget {
 	  wp_register_style( 'wp_multisite_popular_posts', plugins_url( 'wp-multisite-popular-posts/css/wp-multisite-popular-posts.css' ) );
 	  wp_enqueue_style( 'wp_multisite_popular_posts' );
 	}
-  
+	
+
+	
   // widget form creation
   function form($instance) {
 	
@@ -322,5 +324,15 @@ function widget($args, $instance) {
 }
 // register widget
 add_action('widgets_init', create_function('', 'return register_widget("wp_multisite_popular_posts");'));
+
+function wp_mpp_load_lang() {
+  	$plugin_name =  'wp-multisite-popular-posts';
+  $relative_path = dirname( plugin_basename( __FILE__ ) ) . '/languages' ;
+  //echo $relative_path . '<br/>';
+  if (load_plugin_textdomain( 'wp_mpp', false, $relative_path)) {
+	//echo 'SUCCESS::loading lang file in :'.$relative_path;
+  }
+}
+add_action( 'init', 'wp_mpp_load_lang');
 
 ?>
