@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Multisite Popular Posts\n"
-"POT-Creation-Date: 2015-03-30 16:17+0100\n"
-"PO-Revision-Date: 2015-03-30 16:18+0100\n"
+"POT-Creation-Date: 2015-03-30 16:36+0100\n"
+"PO-Revision-Date: 2015-03-30 16:36+0100\n"
 "Last-Translator: \n"
 "Language-Team: termel <admin@termel.fr>\n"
 "Language: Français\n"
@@ -17,23 +17,25 @@ msgstr ""
 
 #: wp-multisite-popular-posts.php:16
 #: ../trunk/wp-multisite-popular-posts.php:16
-msgid "Add this widget to diaplay most popular posts across the network"
+msgid "Add this widget to display most popular posts across the network"
 msgstr ""
+"Ajouter ce widget pour afficher les articles les plus populaire sur tout le "
+"réseau"
 
 #: wp-multisite-popular-posts.php:19
 #: ../trunk/wp-multisite-popular-posts.php:19
 msgid "WP Multisite Popular Posts"
-msgstr ""
+msgstr "WP Multisite Popular Posts"
 
 #: wp-multisite-popular-posts.php:282
 #: ../trunk/wp-multisite-popular-posts.php:282
 msgid "Total number of posts accross network: "
-msgstr ""
+msgstr "Numbre total de posts sur tout le réseau:"
 
 #: wp-multisite-popular-posts.php:291
 #: ../trunk/wp-multisite-popular-posts.php:291
 msgid "Not enough data"
-msgstr ""
+msgstr "Pas assez de données"
 
 #: wp-multisite-popular-posts.php:299
 #: ../trunk/wp-multisite-popular-posts.php:299

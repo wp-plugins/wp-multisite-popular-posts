@@ -13,7 +13,7 @@ class wp_multisite_popular_posts extends WP_Widget {
   
   // constructor
   function wp_multisite_popular_posts() {
-	$widget_ops = array('classname' => 'wp_multisite_popular_posts', 'description' => __('Add this widget to diaplay most popular posts across the network', 'wp_mpp'));
+	$widget_ops = array('classname' => 'wp_multisite_popular_posts', 'description' => __('Add this widget to display most popular posts across the network', 'wp_mpp'));
     $control_ops = array('width' => 400, 'height' => 300);
 	
 	parent::WP_Widget(false, $name = __('WP Multisite Popular Posts', 'wp_mpp'),$widget_ops/*,$control_ops*/ );
