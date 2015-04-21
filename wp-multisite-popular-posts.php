@@ -3,7 +3,7 @@
 Plugin Name: WP Multisite Most Commented Posts
 Plugin URI: http://www.termel.fr
 Description: Show most commented posts across multisite install : Widget & [SHORTCODE]
-Version: 1.2
+Version: 1.3
 Author: Termel
 Author URI: http://www.termel.fr
 License: GPL2
